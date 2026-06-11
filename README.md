@@ -1,3 +1,41 @@
+# Tugasku - Aplikasi Manajemen Tugas (UTS Pemrograman Web)
+
+Aplikasi Web Manajemen Tugas sederhana bernama **Tugasku** yang dibangun menggunakan framework **Laravel 11**. Proyek ini dikembangkan sepenuhnya menggunakan metodologi **Test-Driven Development (TDD)** untuk memastikan kualitas kode, ketahanan fungsionalitas sistem, serta manajemen arsitektur yang bersih.
+
+---
+
+## 👤 Identitas Mahasiswa
+* **Nama:** Andri Yanto Wijaya
+* **NIM:** 202359201012
+* **Tugas:** Ujian Tengah Semester (UTS) - Pemrograman Web Terstruktur
+
+---
+
+## 🚀 Fitur Aplikasi
+Aplikasi ini mendukung siklus hidup manajemen tugas (*Task Management*) mendasar, meliputi:
+1. **Daftar Tugas (`GET /tasks`):** Menampilkan seluruh daftar tugas beserta batas waktu penyelesaiannya.
+2. **Tambah Tugas Baru (`POST /tasks`):** Formulir validasi untuk memasukkan judul tugas dan tanggal batas waktu.
+3. **Selesaikan Tugas (`PATCH /tasks/{id}/complete`):** Menandai tugas yang telah selesai dengan visualisasi coretan teks (*strike-through*).
+4. **Hapus Tugas (`DELETE /tasks/{id}`):** Menghapus catatan tugas yang salah atau tidak diperlukan dari database secara permanen.
+
+---
+
+## 🧪 Metodologi Pengembangan (TDD)
+Pengembangan fitur pada aplikasi ini mengikuti siklus ketat **TDD (Red - Green - Refactor)**:
+* **Fase RED:** Menulis skenario pengujian unit dan fitur terlebih dahulu di dalam `tests/Feature/TaskTest.php` untuk memastikan ekspektasi sistem terekam sebelum kode ditulis.
+* **Fase GREEN:** Mengimplementasikan kode program seminimal mungkin pada komponen *Route*, *Controller*, dan *Migration* agar pengujian otomatis berhasil lolos (*Passed*).
+* **Fase REFACTOR:** Melakukan restrukturisasi visual menggunakan CSS minimalis modern untuk meningkatkan aspek UI/UX tanpa merusak fungsionalitas backend yang telah diuji.
+
+---
+
+## 🛠️ Cara Menjalankan Proyek Secara Lokal
+
+1. **Clone Repositori**
+   ```bash
+   git clone [https://github.com/AndriYantoWijaya/uts-tdd-laravel.git](https://github.com/AndriYantoWijaya/uts-tdd-laravel.git)
+   cd uts-tdd-laravel
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
