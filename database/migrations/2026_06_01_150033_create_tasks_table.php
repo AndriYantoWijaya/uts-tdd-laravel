@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
+            $table->string('title');          // TAMBAHKAN BARIS INI
+            $table->date('due_date');          // TAMBAHKAN BARIS INI
+            $table->boolean('is_completed')->default(false); // TAMBAHKAN BARIS INI
             $table->timestamps();
         });
     }
