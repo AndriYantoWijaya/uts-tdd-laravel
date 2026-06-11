@@ -10,7 +10,7 @@ Aplikasi Web Manajemen Tugas sederhana bernama **Tugasku** yang dibangun menggun
 ## 👤 Identitas Mahasiswa
 * **Nama:** Andri Yanto Wijaya
 * **NIM:** 202359201012
-* **Tugas:** Ujian Tengah Semester (UTS) - Pemrograman Web Terstruktur
+* **Tugas:** Ujian Tengah Semester (UTS) - Pemrograman Web
 
 ---
 
