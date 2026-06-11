@@ -2,6 +2,9 @@
 
 Aplikasi Web Manajemen Tugas sederhana bernama **Tugasku** yang dibangun menggunakan framework **Laravel 11**. Proyek ini dikembangkan sepenuhnya menggunakan metodologi **Test-Driven Development (TDD)** untuk memastikan kualitas kode, ketahanan fungsionalitas sistem, serta manajemen arsitektur yang bersih.
 
+> ⚠️ **Pernyataan Hak Cipta:**
+> *"Kode sumber aplikasi ini dibuat oleh Andri Yanto Wijaya pada 2026 untuk mengerjakan soal UTS Pemrograman Web II"*
+
 ---
 
 ## 👤 Identitas Mahasiswa
