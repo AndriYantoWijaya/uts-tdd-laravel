@@ -13,23 +13,37 @@ class TaskController extends Controller
         return view('tasks.index', compact('tasks'));
     }
 
-    // TAMBAHKAN FUNGSI INI
     public function store(Request $request)
     {
-        // 1. Validasi data yang dikirim dari form
         $request->validate([
             'title' => 'required',
             'due_date' => 'required|date',
         ]);
 
-        // 2. Simpan data baru ke dalam database
         Task::create([
             'title' => $request->title,
             'due_date' => $request->due_date,
             'is_completed' => false,
         ]);
 
-        // 3. Kembalikan halaman ke daftar tugas
+        return redirect('/tasks');
+    }
+
+    // FUNGSI BARU: Mengubah status tugas menjadi selesai
+    public function complete(Task $task)
+    {
+        $task->update([
+            'is_completed' => true
+        ]);
+
+        return redirect('/tasks');
+    }
+
+    // FUNGSI BARU: Menghapus tugas dari database
+    public function destroy(Task $task)
+    {
+        $task->delete();
+
         return redirect('/tasks');
     }
 }
